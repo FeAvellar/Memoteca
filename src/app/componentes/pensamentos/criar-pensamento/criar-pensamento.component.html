@@ -23,7 +23,7 @@
         <div class="modelo modelo1 ff-roboto-mono">
           <img src="../../../../assets/Imagens/modelo1.png" alt="Aspas Azuis">
           <p class="conteudo">{{pensamento.conteudo}}</p>
-          <p class="conteudo"><b>{{pensamento.autoria}}</b></p>
+          <p class="autoria"><b>{{pensamento.autoria}}</b></p>
         </div>
       </div>
       <div class="radio-modelo">
@@ -32,13 +32,13 @@
           <div class="custom-radio">
             <span></span>
           </div>
-          <span>Modelo 1</span>
+          <span>Modelo 2</span>
         </label>
         Prévia
         <div class="modelo modelo2 ff-roboto-mono">
           <img src="../../../../assets/Imagens/modelo2.png" alt="Aspas azul claro">
           <p class="conteudo">{{pensamento.conteudo}}</p>
-          <p class="conteudo"><b>{{pensamento.autoria}}</b></p>
+          <p class="autoria"><b>{{pensamento.autoria}}</b></p>
         </div>
       </div>
       <div class="radio-modelo">
@@ -52,14 +52,14 @@
         Prévia
         <div class="modelo modelo3 ff-roboto-mono">
           <img src="../../../../assets/Imagens/modelo3.png" alt="Aspas Verdes">
-          <p class="conteudo">{{pensamento.conteudo}}</p>
-          <p class="conteudo"><b>{{pensamento.autoria}}</b></p>
+          <p class="conteudo">{{ pensamento.conteudo }}</p>
+          <p class="autoria"><b>{{ pensamento.autoria }}</b></p>
         </div>
       </div>
     </div>
     <div class="acoes">
-      <button (click)="criarPensamento()" class="botao">Salvar</button>
-      <button (click)="cancelarPensamento()"class="botao">Cancelar</button>
+      <button  (click)="criarPensamento()" class="botao">Salvar</button>
+      <button  (click)="cancelarPensamento()" routerLink="/listarPensamento" class="botao">Cancelar</button>
     </div>
   </form>
 
